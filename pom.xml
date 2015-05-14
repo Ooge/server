@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>uk.ooge</groupId>
+  <artifactId>server</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>server</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+  		<groupId>javax.websocket</groupId>
+  		<artifactId>javax.websocket-api</artifactId>
+  		<version>1.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.glassfish.tyrus</groupId>
+  		<artifactId>tyrus-server</artifactId>
+  		<version>1.10</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.glassfish.tyrus</groupId>
+  		<artifactId>tyrus-container-grizzly-server</artifactId>
+  		<version>1.10</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.google.code.gson</groupId>
+  		<artifactId>gson</artifactId>
+  		<version>2.3.1</version>
+  	</dependency>
+  </dependencies>
+</project>
