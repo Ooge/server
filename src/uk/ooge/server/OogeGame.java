@@ -13,6 +13,10 @@ public class OogeGame {
 		System.out.println("wss started");
 	}
 	
+	public WebSocketServer getWebSocketServer() {
+		return server;
+	}
+	
 	public void exit() {
 		server.stop();
 	}

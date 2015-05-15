@@ -6,10 +6,19 @@ import org.glassfish.tyrus.server.Server;
 
 public class WebSocketServer {
 	
+	public static WebSocketServer instance;
+	
+	private WebSocketEvents eventHandler;
 	private Server server;
 	
 	public WebSocketServer() {
 		server = new Server("localhost", 9001, "/", null, GameEndpoint.class);
+		eventHandler = new WebSocketEvents();
+		instance = this;
+	}
+	
+	public WebSocketEvents getEventHandler() {
+		return eventHandler;
 	}
 	
 	public Server getServer() {
